@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void factorizeAndPrint(long n);
+int is_prime(long n);
+void factorize_and_print(long n);
 
-#endif /*_MAIN_H_*/
+#endif /* _MAIN_H_ */

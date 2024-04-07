@@ -1,15 +1,19 @@
+/\*
+
+- File: factorize_and_print.c
+- Auth: Harrison Eze
+- Date: 7th April 2024
+  \*/
+
 RSA Factoring Challenge
 Algorithm
 Scripting
- Weight: 1
- Project will start Mar 25, 2024 6:00 AM, must end by Apr 8, 2024 6:00 AM
- Checker was released at Mar 28, 2024 6:00 PM
- An auto review will be launched at the deadline
+Weight: 1
+Project will start Mar 25, 2024 6:00 AM, must end by Apr 8, 2024 6:00 AM
+Checker was released at Mar 28, 2024 6:00 PM
+An auto review will be launched at the deadline
 Background Context
 Before you continue reading, start this song in the background :)
-
-
-
 
 We have sniffed an unsecured network and found numbers that are used to encrypt very important documents. It seems that those numbers are not always generated using large enough prime numbers. Your mission should you choose to accept it, is to factorize these numbers as fast as possible before the target fixes this bug on their server - so that we can decode the encrypted documents.
 
@@ -26,8 +30,7 @@ Requirements
 General
 You can choose the language of your choice.
 OS needs to be Standard Ubuntu 20.04 LTS/
-Tasks
-0. Factorize all the things!
+Tasks 0. Factorize all the things!
 #advanced
 Factorize as many numbers as possible into a product of two smaller numbers.
 
@@ -46,7 +49,7 @@ Your program should run without any dependency: You will not be able to install 
 Time limit: Your program will be killed after 5 seconds if it hasn’t finish
 Push all your scripts, source code, etc… to your repository
 we will only run your executable factors
-julien@ubuntu:~/factors$ cat tests/test00 
+julien@ubuntu:~/factors$ cat tests/test00
 4
 12
 34
@@ -75,20 +78,20 @@ julien@ubuntu:~/factors$ time ./factors tests/test00
 9999=3333*3
 9797973=3265991*3
 49=7*7
-239809320265259=15485783*15485773
+239809320265259=15485783\*15485773
 
-real    0m0.009s
-user    0m0.008s
+real 0m0.009s
+user 0m0.008s
 sys 0m0.001s
-julien@ubuntu:~/factors$ 
+julien@ubuntu:~/factors$
 Repo:
 
 GitHub repository: RSA-Factoring-Challenge
 File: factors
-  
+
 1. RSA Factoring Challenge
-#advanced
-RSA Laboratories states that: for each RSA number n, there exist prime numbers p and q such that
+   #advanced
+   RSA Laboratories states that: for each RSA number n, there exist prime numbers p and q such that
 
 n = p × q. The problem is to find these two primes, given only n.
 
@@ -110,7 +113,7 @@ julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-2
 julien@ubuntu:~/RSA Factoring Challenge$ [...]  
 julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-15
 239821585064027
-julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-15 
+julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-15
 239821585064027=15486481*15485867
 julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-16
 2497885147362973
